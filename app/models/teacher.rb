@@ -1,6 +1,6 @@
-# class Teacher < ActiveRecord::Base
+class Teacher < ActiveRecord::Base
 
-#     has_many :courses
-#     has_many :students, through: :courses
+    has_many :courses
+    has_many :students, through: :courses
 
-# end
+end

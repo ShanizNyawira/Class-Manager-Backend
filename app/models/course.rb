@@ -1,6 +1,6 @@
-# class Course < ActiveRecord::Base
+class Course < ActiveRecord::Base
 
-#     belongs_to :teacher
-#     has_many :students 
+    belongs_to :teacher
+    has_many :students 
     
-# end
+end
