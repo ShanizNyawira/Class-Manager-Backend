@@ -13,7 +13,7 @@ class CoursesController < Sinatra::Base
   end
 
   post "/courses" do
-    course = Course.create(name: params[:course_name], course_code: params[:course_code], course_description: params[:course_description], teacher_id: params[:teacher_id], student_id: params[:student_id])
+    course = Course.create(course_name: params[:course_name], course_code: params[:course_code], course_description: params[:course_description], teacher_id: params[:teacher_id], student_id: params[:student_id])
     course.to_json
   end
 
