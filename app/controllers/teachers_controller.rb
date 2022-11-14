@@ -1,7 +1,6 @@
 class TeachersController < Sinatra::Base
   set :default_content_type, 'application/json'
   
-  # Add your routes here
 
   get "/teachers" do
     teachers = Teacher.all
